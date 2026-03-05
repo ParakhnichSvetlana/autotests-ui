@@ -18,6 +18,6 @@ with  sync_playwright() as playwright:
     password_input = page.locator('//div[@data-testid="registration-form-password-input"]//div//input')
     password_input.fill('password')
 
-    expect(login_button).to_be_visible()
+    expect(login_button).to_be_enabled()
 
     page.wait_for_timeout(5000)
