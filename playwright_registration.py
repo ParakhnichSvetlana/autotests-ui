@@ -25,7 +25,6 @@ with sync_playwright() as playwright:
 
     context.storage_state(path="browser-state.json")
 
-    page.wait_for_timeout(5000)
 
 with sync_playwright() as playwright:
     browser = playwright.chromium.launch(headless=False)
